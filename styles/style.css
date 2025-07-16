@@ -154,7 +154,7 @@
 }
 
 .footer {
-  height: max(100vh, var(--min-height));
+  height: 100vh;
   position: relative;
 }
 
@@ -176,6 +176,7 @@
 }
 
 .footer_title {
+  /* text-shadow: 2px 2px 0 var(--real-red); */
   height: 100%;
   display: flex;
   align-items: center;
@@ -211,7 +212,7 @@
 }
 
 .simple_link {
-  text-shadow: 2px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
 }
 
@@ -284,7 +285,6 @@
 
   .header {
     margin-block-end: 40px;
-    min-height: var(--min-height);
   }
 
   .gallery {
@@ -296,10 +296,6 @@
 
   .gallery__item {
     margin: 0;
-  }
-
-  .footer {
-    min-height: var(--min-height);
   }
 
   .sunset_pic {
@@ -380,12 +376,14 @@
 @media (width >= 1024px) {
   .header {
     margin-block-end: 0;
-    min-height: var(--min-height);
   }
 
   .footer {
-    min-height: var(--min-height);
     margin-top: 50px;
+  }
+
+  .footer_title {
+    text-shadow: 2px 2px 0 var(--real-red);
   }
 
   .huge_title {
