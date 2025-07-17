@@ -156,7 +156,7 @@
 .footer {
   height: 100vh;
   position: relative;
-  min-height: var(--min-height);
+  min-height: 668px;
 }
 
 /* Шрифты */
@@ -177,11 +177,13 @@
 }
 
 .footer_title {
-  /* text-shadow: 2px 2px 0 var(--real-red); */
+  text-shadow: 2px 2px 0 var(--basic-pink);
   height: 100%;
   display: flex;
   align-items: center;
   margin-top: 32px;
+  margin-left: 0;
+  justify-content: center;
 }
 
 .answer_title {
@@ -271,7 +273,7 @@
 /* GALLERY Вариант 2 и 3 */
 @media (width >= 768px) {
   .huge_title {
-    font-size: clamp(7.5rem, 0.563rem + 14.453vw, 15rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .answer {
     padding-top: 0px;
@@ -369,7 +371,6 @@
   }
 
   .footer_title {
-    justify-content: center;
     margin-top: 62px;
   }
 }
@@ -381,10 +382,6 @@
 
   .footer {
     margin-top: 50px;
-  }
-
-  .footer_title {
-    text-shadow: 2px 2px 0 var(--real-red);
   }
 
   .huge_title {
@@ -414,6 +411,10 @@
 
   .header_text {
     margin-top: 20px;
+  }
+
+  .footer_title {
+    text-shadow: 2px 2px 0 var(--real-red);
   }
 
   /* Меню  w3 */
