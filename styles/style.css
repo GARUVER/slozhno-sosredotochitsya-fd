@@ -156,6 +156,7 @@
 .footer {
   height: 100vh;
   position: relative;
+  min-height: var(--min-height);
 }
 
 /* Шрифты */
@@ -432,16 +433,6 @@
   .title {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-  }
-
-  .div_2 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "question_what ."
-      "answers_what answers_what";
-    gap: 10px;
   }
 
   .question_what {
